@@ -1,9 +1,5 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/registration">Registration</router-link>
-  </nav>
-  <router-view />
+  <HeaderView />
 </template>
 
 <style lang="scss">
@@ -28,3 +24,14 @@ nav {
   }
 }
 </style>
+
+<script>
+import HeaderView from '@/components/HeaderView.vue'
+
+export default {
+  components: {
+    HeaderView
+  }
+}
+</script>
+
