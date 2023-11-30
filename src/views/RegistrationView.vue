@@ -1,23 +1,47 @@
 <template>
     <div>
         <h2>Create an account</h2>
-        <div >
-          <label class="common-label"><strong>Name  *</strong></label>
-          <input class="common-input" type="text" />
-        </div>
+        <FormKit 
+          type="form"
+          @submit="handleSubmit"
+        >
+          <FormKit
+            type="text"
+            label="Your Email"
+            name="email"
+            prefix-icon="email"
+            placeholder="email@domain.com"
+            validation="required|email"
+            help="Order confirmation will be sent to your address"
+          />
+        </FormKit>
     </div>
 </template>
 
 <style>
-.common-label {
-  margin-right: 3rem;
+/* .common-label {
+  margin: 0rem 1rem 0rem;
   columns: 3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2F4F4F;
 }
-.common-input {
+input[type=text], select {
   width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+@media only screen and (max-width: 600px) {
+  .common-label {
+    margin: 0rem 1rem 0rem;
+    columns: 3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2F4F4F;
+  }
+} */
 </style>
 
 <script>
