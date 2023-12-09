@@ -1,6 +1,6 @@
 <template>
   <h2>Create an account</h2>
-  <div class="row mt-3 ml-2">
+  <div class="row mx-auto ml-2">
     <FormKit type="form" @submit="handleSubmit" class="col-md-6">
       <FormKit type="text" label="Your Email" name="email" prefix-icon="email" placeholder="email@domain.com"
         validation="required|email" class="px-0 ml-2"/>

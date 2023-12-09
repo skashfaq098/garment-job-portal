@@ -7,5 +7,6 @@ import './assets/plugins/bootstrap/bootstrap-utilities.min.css'
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+import './index.css'
 
 createApp(App).use(plugin, defaultConfig, store).use(router).mount("#app");
