@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <h2>Create an account</h2>
-        <FormKit 
-          type="form"
-          @submit="handleSubmit"
-        >
-          <FormKit
-            type="text"
-            label="Your Email"
-            name="email"
-            prefix-icon="email"
-            placeholder="email@domain.com"
-            validation="required|email"
-            help="Order confirmation will be sent to your address"
-          />
-        </FormKit>
-    </div>
+  <h2>Create an account</h2>
+  <div class="row mt-3 ml-2">
+    <FormKit type="form" @submit="handleSubmit" class="col-md-6">
+      <FormKit type="text" label="Your Email" name="email" prefix-icon="email" placeholder="email@domain.com"
+        validation="required|email" class="px-0 ml-2"/>
+    </FormKit>
+  </div>
 </template>
 
 <style>
